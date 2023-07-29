@@ -7,7 +7,7 @@ import os
 
 load_dotenv()
 app= Flask(__name__)
-app.config['SECRET_KEY']=os.environ['sKey']
+app.config['SECRET_KEY']=os.getenv("sKey")
 RapidApi= os.getenv("aKey")
 wApi= os.getenv("wKey")
 
