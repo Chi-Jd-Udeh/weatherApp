@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include 'bootstrap.html' %}
+    <title>{{title}}</title>
+</head>
+<body>
+    {% include 'nav.html' %}
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul>
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+    <br>
+
+    <h1>{% block title %} Add a Weather Request {% endblock %}</h1>
+    <form method="post">
+        <label for="title">City</label>
+        <br>
+        <input type="text" name="city"
+               placeholder="city"
+               value="{{ request.form['city'] }}"></input>
+        <br>
+
+        <label for="title">country</label>
+        <br>
+        <input type="text" name="Country"
+               placeholder="country"
+               value="{{ request.form['country'] }}"></input>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    
+</body>
+</html>

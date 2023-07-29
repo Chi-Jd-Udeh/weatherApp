@@ -1,0 +1,15 @@
+blinker==1.6.2
+certifi==2023.5.7
+charset-normalizer==3.1.0
+click
+Flask
+idna
+itsdangerous
+Jinja2
+MarkupSafe
+optional-django
+requests
+urllib3
+Werkzeug
+gunicorn
+python-dotenv
