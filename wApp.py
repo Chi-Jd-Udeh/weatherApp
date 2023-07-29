@@ -62,7 +62,7 @@ def home_page():
         else:
             api_url = 'https://api.api-ninjas.com/v1/geocoding?city={}&country={}'.format(city,country)
             response = requests.get(api_url + city, headers={'X-Api-Key': RapidApi})
-            print(response.json())
+            # print(response.json())
             if response.status_code == requests.codes.ok and response.json():
 
                 data= response.json()
