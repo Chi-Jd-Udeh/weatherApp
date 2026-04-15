@@ -4,7 +4,7 @@ A Flask-based web application that provides a 5-day weather forecast for any cit
 ---
 #HOW TO:<br />
 
-#1. Click on the link: weatherApp-jdTheBean.pythonanywhere.com (wait 1-2 minutes for the website to spin up...)<br />
+#1. Click on the link: ([weatherApp-jdTheBean.pythonanywhere.com/](weatherApp-jdTheBean.pythonanywhere.com/)) <br />
 #2. Input a relevant City and it's coresponding country into the form.<br />
 
 
